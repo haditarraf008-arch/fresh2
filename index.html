@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fresh qet3aa | Modern lauxury & brands</title>
+  
+  <!-- Google Fonts & Font Awesome Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Syne:wght@600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- Custom Stylesheet -->
+  <link rel="stylesheet" href="fresh2.css">
+</head>
+<body>
+
+  <!-- Top Announcement Bar -->
+  <div class="announcement-bar">
+    <span><i class="fa-solid fa-truck-fast"></i> Delivery Across Lebanon • Cash on Delivery & Whish Money</span>
+  </div>
+
+  <!-- Header & Navigation -->
+  <header class="navbar">
+    <div class="nav-container">
+      <a href="#" class="brand-logo">
+        FRESH <span class="arabic-logo">قطعة</span>
+      </a>
+
+      <nav class="nav-links">
+        <a href="#hero" class="active">Home</a>
+        <a href="#shop">Latest Drop</a>
+        <a href="#categories">Categories</a>
+        <a href="#care">Garment Care</a>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="icon-btn" id="search-toggle" aria-label="Search">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+        <button class="icon-btn" id="size-modal-btn" aria-label="Sizing & Condition Guide">
+          <i class="fa-solid fa-ruler-combined"></i>
+        </button>
+        <button class="icon-btn cart-btn" id="cart-drawer-toggle" aria-label="Shopping Bag">
+          <i class="fa-solid fa-bag-shopping"></i>
+          <span class="cart-count" id="cart-count-badge">0</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Search Bar Overlay -->
+    <div class="search-overlay" id="search-bar">
+      <div class="search-inner">
+        <i class="fa-solid fa-magnifying-glass search-icon"></i>
+        <input type="text" id="search-input" placeholder="Search brands (Levi's, Carhartt, Polo), categories, or size...">
+        <button class="close-search" id="close-search"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="hero-section" id="hero">
+    <div class="hero-container">
+      <div class="hero-content">
+        <div class="pill-tag"><i class="fa-solid fa-sparkles"></i> Curated 1-of-1 Vintage</div>
+        <h1>REFINED STREETWEAR & TIMELESS PIECES</h1>
+        <p>Hand-sourced, meticulously restored, and steamed vintage apparel. Authentic style delivered straight to your doorstep across Lebanon.</p>
+        <div class="hero-actions">
+          <a href="#shop" class="btn btn-emerald">Explore Latest Drop</a>
+          <a href="#care" class="btn btn-beige-outline">Restoration Process</a>
+        </div>
+      </div>
+      <div class="hero-image-grid">
+        <div class="hero-card hero-card-main">
+          <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=800&q=80" alt="Vintage Carhartt Jacket">
+          <div class="hero-card-tag">Featured • Carhartt Workwear</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Trust Features -->
+  <section class="trust-banner">
+    <div class="trust-container">
+      <div class="trust-item">
+        <div class="trust-icon"><i class="fa-solid fa-shirt"></i></div>
+        <div>
+          <h4>Steamed & Restored</h4>
+          <p>De-pilled, steamed, and ready to wear</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon"><i class="fa-solid fa-certificate"></i></div>
+        <div>
+          <h4>100% Authentic</h4>
+          <p>Hand-verified vintage brands</p>
+        </div>
+      </div>
+      <div class="trust-item">
+        <div class="trust-icon"><i class="fa-solid fa-money-bill-transfer"></i></div>
+        <div>
+          <h4>COD & Whish Money</h4>
+          <p>Local Lebanese checkout options</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Shop Section -->
+  <section class="shop-section" id="shop">
+    <div class="shop-container">
+      <div class="section-header">
+        <span class="sub-heading">LIMITED AVAILABILITY</span>
+        <h2>CURATED DROP</h2>
+        <p>Every garment is 1-of-1. Once sold, it cannot be restocked.</p>
+      </div>
+
+      <!-- Filter Tabs -->
+      <div class="filter-tabs" id="categories">
+        <button class="tab-btn active" data-category="all">All Items</button>
+        <button class="tab-btn" data-category="denim">Denim & Jeans</button>
+        <button class="tab-btn" data-category="outerwear">Outerwear</button>
+        <button class="tab-btn" data-category="sweaters">Sweaters & Knits</button>
+        <button class="tab-btn" data-category="tees">Tees & Polos</button>
+      </div>
+
+      <!-- Product Grid -->
+      <div class="product-grid" id="product-grid">
+
+        <!-- Card 1 -->
+        <div class="product-card" data-category="denim">
+          <div class="card-media">
+            <span class="badge badge-green">9/10 Condition</span>
+            <img src="https://images.unsplash.com/photo-1541099649105-f69ad21f3246?auto=format&fit=crop&w=600&q=80" alt="Vintage Levi's 501">
+            <button class="quick-add-btn" data-id="1" data-title="Vintage Levi's 501 Straight Fit" data-price="38.00" data-size="W32 / L30">
+              <i class="fa-solid fa-plus"></i> Quick Add
+            </button>
+          </div>
+          <div class="card-details">
+            <span class="brand-name">Levi's • Made in USA</span>
+            <h3 class="product-title">Vintage Levi's 501 Straight Fit Denim</h3>
+            <div class="size-info"><i class="fa-solid fa-ruler-horizontal"></i> W32 / L30</div>
+            <div class="card-footer">
+              <span class="price">$38.00 <small>USD</small></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 2 -->
+        <div class="product-card" data-category="outerwear">
+          <div class="card-media">
+            <span class="badge badge-green">9.5/10 Mint</span>
+            <img src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=600&q=80" alt="Carhartt Detroit Jacket">
+            <button class="quick-add-btn" data-id="2" data-title="Heavyweight Canvas Detroit Jacket" data-price="75.00" data-size="Large (P2P: 24&quot;)">
+              <i class="fa-solid fa-plus"></i> Quick Add
+            </button>
+          </div>
+          <div class="card-details">
+            <span class="brand-name">Carhartt Workwear</span>
+            <h3 class="product-title">Heavyweight Canvas Detroit Jacket</h3>
+            <div class="size-info"><i class="fa-solid fa-ruler-horizontal"></i> Large (P2P: 24")</div>
+            <div class="card-footer">
+              <span class="price">$75.00 <small>USD</small></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 3 -->
+        <div class="product-card" data-category="sweaters">
+          <div class="card-media">
+            <span class="badge badge-beige">8.5/10 Vintage</span>
+            <img src="https://images.unsplash.com/photo-1620799140408-edc6dcb6d633?auto=format&fit=crop&w=600&q=80" alt="Polo Ralph Lauren Knit">
+            <button class="quick-add-btn" data-id="3" data-title="Cable-Knit Cotton Crewneck" data-price="42.00" data-size="Medium (P2P: 21.5&quot;)">
+              <i class="fa-solid fa-plus"></i> Quick Add
+            </button>
+          </div>
+          <div class="card-details">
+            <span class="brand-name">Polo Ralph Lauren</span>
+            <h3 class="product-title">Cable-Knit Cotton Crewneck Sweater</h3>
+            <div class="size-info"><i class="fa-solid fa-ruler-horizontal"></i> Medium (P2P: 21.5")</div>
+            <div class="card-footer">
+              <span class="price">$42.00 <small>USD</small></span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Card 4 -->
+        <div class="product-card" data-category="tees">
+          <div class="card-media">
+            <span class="badge badge-green">9/10 Condition</span>
+            <img src="https://images.unsplash.com/photo-1521572267360-ee0c2909d518?auto=format&fit=crop&w=600&q=80" alt="Boxy Graphic Tee">
+            <button class="quick-add-btn" data-id="4" data-title="Faded Heavyweight Boxy Graphic Tee" data-price="25.00" data-size="XL (P2P: 23.5&quot;)">
+              <i class="fa-solid fa-plus"></i> Quick Add
+            </button>
+          </div>
+          <div class="card-details">
+            <span class="brand-name">Vintage Streetwear</span>
+            <h3 class="product-title">Faded Heavyweight Boxy Graphic Tee</h3>
+            <div class="size-info"><i class="fa-solid fa-ruler-horizontal"></i> XL (P2P: 23.5")</div>
+            <div class="card-footer">
+              <span class="price">$25.00 <small>USD</small></span>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Garment Care & Restoration -->
+  <section class="care-section" id="care">
+    <div class="care-container">
+      <div class="care-content">
+        <span class="sub-heading">OUR QUALITY STANDARD</span>
+        <h2>Garment Care & Restoration</h2>
+        <p>Every piece in our shop goes through a strict cleaning and preparation process before listing:</p>
+        <div class="care-grid">
+          <div class="care-box">
+            <i class="fa-solid fa-soap"></i>
+            <h4>1. Deep Washing & Treatment</h4>
+            <p>Targeted stain treatment using gentle soaps and specialized eco-friendly detergents.</p>
+          </div>
+          <div class="care-box">
+            <i class="fa-solid fa-scissors"></i>
+            <h4>2. Fabric De-Pilling</h4>
+            <p>Fabric shaver restoration to clear lint and return sweater textures to a smooth finish.</p>
+          </div>
+          <div class="care-box">
+            <i class="fa-solid fa-wind"></i>
+            <h4>3. Steaming & Sanitizing</h4>
+            <p>High-temperature Tefal garment steaming to eliminate creases and sanitize fibers.</p>
+          </div>
+          <div class="care-box">
+            <i class="fa-solid fa-ruler-combined"></i>
+            <h4>4. Precision Measurement</h4>
+            <p>Exact pit-to-pit, length, and waist measurements taken while laid flat.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cart Drawer Overlay -->
+  <div class="cart-overlay" id="cart-overlay"></div>
+  <aside class="cart-drawer" id="cart-drawer">
+    <div class="cart-header">
+      <h3>SHOPPING BAG (<span id="cart-count-header">0</span>)</h3>
+      <button class="close-btn" id="close-cart"><i class="fa-solid fa-xmark"></i></button>
+    </div>
+
+    <div class="cart-body" id="cart-items-container">
+      <div class="empty-cart">
+        <i class="fa-solid fa-bag-shopping"></i>
+        <p>Your bag is currently empty.</p>
+      </div>
+    </div>
+
+    <div class="cart-footer">
+      <div class="summary-row">
+        <span>Subtotal</span>
+        <span id="cart-subtotal">$0.00</span>
+      </div>
+      <div class="summary-row">
+        <span>Lebanon Delivery Rate</span>
+        <span>$3.00</span>
+      </div>
+      <div class="summary-row total-row">
+        <span>Total</span>
+        <span id="cart-total">$0.00</span>
+      </div>
+
+      <div class="payment-note">
+        <span>Payment Options:</span>
+        <div class="pay-tags">
+          <span class="pay-tag"><i class="fa-solid fa-truck"></i> Cash on Delivery</span>
+          <span class="pay-tag"><i class="fa-solid fa-mobile-screen-button"></i> Whish Money</span>
+        </div>
+      </div>
+
+      <button class="btn btn-emerald btn-full" id="checkout-btn">
+        Proceed to Checkout <i class="fa-solid fa-arrow-right"></i>
+      </button>
+    </div>
+  </aside>
+
+  <!-- Size Guide Modal -->
+  <div class="modal-backdrop" id="size-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3><i class="fa-solid fa-ruler-combined"></i> Sizing & Condition Guide</h3>
+        <button class="close-btn" id="close-size-modal"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="modal-body">
+        <h4>How We Measure Vintage Garments</h4>
+        <p>Tag sizes on vintage clothing often vary from modern sizing. We provide flat measurements for accurate fitting:</p>
+        
+        <table class="measure-table">
+          <thead>
+            <tr>
+              <th>Spec</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><strong>Pit to Pit (P2P)</strong></td>
+              <td>Measured straight across chest from one armpit seam to the other.</td>
+            </tr>
+            <tr>
+              <td><strong>Length</strong></td>
+              <td>Measured from top collar seam down to bottom hemline.</td>
+            </tr>
+            <tr>
+              <td><strong>Waist & Inseam</strong></td>
+              <td>Pants measured flat across waist line and along inner leg seam.</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h4>Condition Scale</h4>
+        <div class="condition-list">
+          <p><strong>10/10 Mint:</strong> Like-new or unused vintage condition.</p>
+          <p><strong>9/10 Excellent:</strong> Clean vintage condition with minor natural age.</p>
+          <p><strong>8/10 Good:</strong> Authentic vintage fading or distressing adding character.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-container">
+      <div class="footer-brand">
+        <a href="#" class="brand-logo">FRESH <span class="arabic-logo">قطعة</span></a>
+        <p>Curated vintage streetwear, denim, and quiet luxury aesthetic apparel in Lebanon.</p>
+        <div class="social-icons">
+          <a href="#" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+          <a href="#" aria-label="TikTok"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="#" aria-label="WhatsApp"><i class="fa-brands fa-whatsapp"></i></a>
+        </div>
+      </div>
+      <div class="footer-nav">
+        <h4>Explore</h4>
+        <ul>
+          <li><a href="#shop">Latest Drop</a></li>
+          <li><a href="#categories">Categories</a></li>
+          <li><a href="#care">Garment Care Process</a></li>
+          <li><a href="#" id="size-guide-footer">Sizing Chart</a></li>
+        </ul>
+      </div>
+      <div class="footer-info">
+        <h4>Delivery & Policy</h4>
+        <ul>
+          <li><i class="fa-solid fa-truck"></i> Fast Delivery across all Lebanon</li>
+          <li><i class="fa-solid fa-rotate"></i> 1-of-1 Unique Item Policy</li>
+          <li><i class="fa-solid fa-shield"></i> Cleaned & Steamed Guarantee</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2026 FRESH قطعة. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Interactive JavaScript -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      let cart = [];
+      const shippingCost = 3.00;
+
+      // Cart Elements
+      const cartDrawer = document.getElementById('cart-drawer');
+      const cartOverlay = document.getElementById('cart-overlay');
+      const cartToggle = document.getElementById('cart-drawer-toggle');
+      const closeCart = document.getElementById('close-cart');
+      const cartCountBadge = document.getElementById('cart-count-badge');
+      const cartCountHeader = document.getElementById('cart-count-header');
+      const cartItemsContainer = document.getElementById('cart-items-container');
+      const cartSubtotalEl = document.getElementById('cart-subtotal');
+      const cartTotalEl = document.getElementById('cart-total');
+
+      // Modal Elements
+      const sizeModal = document.getElementById('size-modal');
+      const sizeModalBtn = document.getElementById('size-modal-btn');
+      const sizeGuideFooter = document.getElementById('size-guide-footer');
+      const closeSizeModal = document.getElementById('close-size-modal');
+
+      // Search Elements
+      const searchToggle = document.getElementById('search-toggle');
+      const searchBar = document.getElementById('search-bar');
+      const closeSearch = document.getElementById('close-search');
+      const searchInput = document.getElementById('search-input');
+
+      // Cart Drawer Toggle
+      const openCart = () => { cartDrawer.classList.add('open'); cartOverlay.classList.add('open'); };
+      const hideCart = () => { cartDrawer.classList.remove('open'); cartOverlay.classList.remove('open'); };
+
+      cartToggle.addEventListener('click', openCart);
+      closeCart.addEventListener('click', hideCart);
+      cartOverlay.addEventListener('click', hideCart);
+
+      // Modal Toggle
+      const openModal = (e) => { e.preventDefault(); sizeModal.classList.add('open'); };
+      const hideModal = () => sizeModal.classList.remove('open');
+
+      sizeModalBtn.addEventListener('click', openModal);
+      sizeGuideFooter.addEventListener('click', openModal
